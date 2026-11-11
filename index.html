@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Cloud Website</title>
+  <meta name="description" content="Lab 01 – Introduction to Cloud Computing. A static website deployed to the cloud by Tô Phương Đạt (24110086).">
+  <meta name="theme-color" content="#050b14">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="brand" href="#top" aria-label="My First Cloud Website – home">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>My First Cloud Website</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <ul class="nav">
+          <li><a href="#about">About</a></li>
+          <li><a href="#cloud">Cloud Computing</a></li>
+          <li><a href="#services">Cloud Services</a></li>
+          <li><a href="#deployment">Deployment</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="eyebrow">Lab 01 · Static website on the cloud</p>
+          <h1>My First Cloud Website</h1>
+          <p class="lead">A small HTML &amp; CSS site, published on the internet over HTTPS instead of living only on my laptop.</p>
+
+          <dl class="student-card">
+            <div><dt>Student</dt><dd>Tô Phương Đạt</dd></div>
+            <div><dt>Student ID</dt><dd>24110086</dd></div>
+            <div><dt>Course</dt><dd>Introduction to Cloud Computing</dd></div>
+          </dl>
+
+          <div class="cta">
+            <a class="btn primary" href="#cloud">Read about the cloud</a>
+            <a class="btn ghost" href="#deployment">Deployment info</a>
+          </div>
+        </div>
+
+        <figure class="hero-art">
+          <img src="assets/cloud.svg" alt="Illustration of a cloud with a padlock, connected to a server stack and two browser windows" width="520" height="400">
+        </figure>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="num">01</span>
+          <h2>About Me</h2>
+        </header>
+        <div class="about-grid">
+          <div class="card">
+            <p>Hi, I'm <strong>Tô Phương Đạt</strong>, student ID <strong>24110086</strong>. I am currently taking <strong>Introduction to Cloud Computing</strong>, taught by Ms. Truong Thi Ngoc Phuong.</p>
+            <p>This website is my first hands-on lab in the course. The goal is simple: write a static page with HTML and CSS, put it on a cloud platform, and prove that anyone can open it with a public HTTPS link.</p>
+          </div>
+          <ul class="facts">
+            <li><span>Name</span><b>Tô Phương Đạt</b></li>
+            <li><span>ID</span><b>24110086</b></li>
+            <li><span>Course</span><b>Introduction to Cloud Computing</b></li>
+            <li><span>Lab</span><b>01 – Deploy a static website</b></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOUD COMPUTING -->
+    <section id="cloud" class="section alt">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="num">02</span>
+          <h2>Cloud Computing</h2>
+        </header>
+        <div class="prose card">
+          <p>Cloud computing means renting computing power over the internet instead of owning and maintaining physical machines yourself. When I open a cloud service, I can get servers, storage, databases or ready-made software within minutes, and I only pay for what I actually use. The provider takes care of the data centers, electricity, cooling and hardware repairs, so I can focus on building my application.</p>
+          <p>The biggest advantages are flexibility and speed. If my website suddenly gets more visitors, the platform can scale up automatically, and when traffic drops it scales back down. Resources are also available from anywhere in the world, which makes it easy to share work with other people. Of course, the cloud depends on a good internet connection and requires careful handling of security and cost.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLOUD SERVICES -->
+    <section id="services" class="section">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="num">03</span>
+          <h2>Cloud Services</h2>
+        </header>
+        <p class="section-intro">The three classic service models differ in how much the provider manages for you.</p>
+
+        <div class="cards">
+          <article class="svc">
+            <div class="tag">IaaS</div>
+            <h3>Infrastructure as a Service</h3>
+            <p>The provider gives me virtual machines, storage and networking. I choose the operating system and install and manage everything above it.</p>
+            <p class="example"><span>Example</span> Amazon EC2</p>
+            <div class="stack" aria-hidden="true"><i class="you"></i><i class="you"></i><i class="you"></i><i class="prov"></i></div>
+            <small>I manage: OS, runtime, app, data</small>
+          </article>
+
+          <article class="svc">
+            <div class="tag">PaaS</div>
+            <h3>Platform as a Service</h3>
+            <p>A ready-to-use platform for building and running applications. I upload my code and the provider handles servers, operating system and scaling.</p>
+            <p class="example"><span>Example</span> AWS Elastic Beanstalk</p>
+            <div class="stack" aria-hidden="true"><i class="you"></i><i class="you"></i><i class="prov"></i><i class="prov"></i></div>
+            <small>I manage: app and data</small>
+          </article>
+
+          <article class="svc">
+            <div class="tag">SaaS</div>
+            <h3>Software as a Service</h3>
+            <p>Complete software delivered through the browser. I just sign in and use it, while the provider runs and updates everything behind the scenes.</p>
+            <p class="example"><span>Example</span> Google Docs</p>
+            <div class="stack" aria-hidden="true"><i class="you"></i><i class="prov"></i><i class="prov"></i><i class="prov"></i></div>
+            <small>I manage: my own content</small>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- DEPLOYMENT -->
+    <section id="deployment" class="section alt">
+      <div class="wrap">
+        <header class="section-head">
+          <span class="num">04</span>
+          <h2>Deployment Information</h2>
+        </header>
+
+        <div class="deploy-grid">
+          <div class="card">
+            <h3>Chosen platform</h3>
+            <dl class="info">
+              <div><dt>Option</dt><dd>B – GitHub Pages</dd></div>
+              <div><dt>Repository</dt><dd><a href="https://github.com/USERNAME/cloud-lab1">github.com/USERNAME/cloud-lab1</a></dd></div>
+              <div><dt>Branch / folder</dt><dd>main / (root)</dd></div>
+              <div><dt>Public URL</dt><dd><a href="https://USERNAME.github.io/cloud-lab1/">https://USERNAME.github.io/cloud-lab1/</a></dd></div>
+              <div><dt>Site type</dt><dd>Static (HTML + CSS, no backend or database)</dd></div>
+            </dl>
+          </div>
+
+          <div class="card live">
+            <h3>Live connection check</h3>
+            <p class="small">Read from your browser right now:</p>
+            <div class="live-row">
+              <span class="dot" id="dot"></span>
+              <strong id="proto">Checking…</strong>
+            </div>
+            <code id="url" class="url">…</code>
+            <ol class="steps">
+              <li>Create public repo <code>cloud-lab1</code></li>
+              <li>Upload <code>index.html</code>, <code>style.css</code>, <code>assets/</code></li>
+              <li>Settings → Pages → <em>main</em> / (root)</li>
+              <li>Open the HTTPS link</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot">
+      <span>© 2026 Tô Phương Đạt · 24110086</span>
+      <span>Introduction to Cloud Computing · Lab 01</span>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script>
+    // Shows the address this page is really served from (useful as HTTPS evidence).
+    (function () {
+      var p = document.getElementById('proto');
+      var u = document.getElementById('url');
+      var d = document.getElementById('dot');
+      u.textContent = window.location.href;
+      if (window.location.protocol === 'https:') {
+        p.textContent = 'Served over HTTPS (secure)';
+        d.className = 'dot ok';
+      } else if (window.location.protocol === 'file:') {
+        p.textContent = 'Opened locally (file://) – not deployed';
+        d.className = 'dot warn';
+      } else {
+        p.textContent = 'Not HTTPS – ' + window.location.protocol;
+        d.className = 'dot warn';
+      }
+    })();
+  </script>
+</body>
+</html>
